@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://github.com/marketplace/actions/yaml-update-action"><img alt="dynamic-yaml-update status" src="https://github.com/devgioele/modern-typescript-action/workflows/Verification/badge.svg"></a>
+  <a href="https://github.com/marketplace/actions/dyanamic-update-yaml?version=v2"><img alt="dynamic-yaml-update status" src="https://github.com/devgioele/modern-typescript-action/workflows/Verification/badge.svg"></a>
 </p>
 
 # YAML Update Action
