@@ -53,7 +53,7 @@ jobs:
         with:
           changes: |
               {
-                "grafana.yaml": {
+                "grafana-values.yaml": {
                   "grafana.ini": {
                     "server": {
                       "root_url": "sssssssssssssssss"
