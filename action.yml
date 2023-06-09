@@ -1,4 +1,4 @@
-name: 'Update YAML Using github inputs'
+name: 'Dyanamic update YAML'
 description: 'Update YAML content based on the github input'
 author: 'pratap477@gmail.com'
 inputs:
