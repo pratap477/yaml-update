@@ -1,0 +1,10 @@
+name: 'Update YAML Using github inputs'
+description: 'Update YAML content based on the github input'
+author: 'pratap477@gmail.com'
+inputs:
+  changes: # change this
+    required: true
+    description: 'input description here'
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
