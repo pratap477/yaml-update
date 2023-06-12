@@ -1,0 +1,34 @@
+spec:
+  acme:
+    privateKeySecretRef:
+      name: letsencrypt-dns01
+    server: https://acme-v02.api.letsencrypt.org/directory
+    solvers:
+    - dns01:
+        azureDNS:
+          clientID: 
+          clientSecretSecretRef:
+            name: azuredns-config
+            key: client-secret
+          subscriptionID: 
+          tenantID: 
+          resourceGroupName: 
+          hostedZoneName: 
+          environment: AzurePublicCloud
+      selector:
+        dnsZones:
+        - " "
+    - dns01:
+        azureDNS:
+          clientID: 
+          clientSecretSecretRef:
+            name: azuredns-config
+            key: client-secret
+          subscriptionID: 
+          tenantID: 
+          resourceGroupName: 
+          hostedZoneName: 
+          environment: AzurePublicCloud
+      selector:
+        dnsZones:
+        - " "
