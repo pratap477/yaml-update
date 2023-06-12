@@ -56,12 +56,19 @@ jobs:
                 "certificate.yml": {
                   "spec": {
                     "acme": {
-                      "solvers: [
-                      "dns01": {
-                        "azureDNS": {
-                         "clientID": "client -id"
+                      "solvers": [
+                        {
+                          "dns01": {
+                            "azureDNS": {
+                              "clientID": "client-id"
+                            }
+                          },
+                          "selector": {
+                            "dnsZones": [
+                              "sss"
+                            ]
+                          }
                         }
-                      }
                       ]
                     }
                   }
