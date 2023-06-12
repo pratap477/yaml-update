@@ -53,13 +53,20 @@ jobs:
         with:
           changes: |
               {
-                "grafana-values.yml": {
-                  "grafana.ini": {
-                    "server": {
-                      "root_url": "sssssssssssssssss"
+                "certificate.yml": {
+                  "spec": {
+                    "acme": [
+                      "dns01": {
+                        "azureDNS": {
+                         "clientID": "client -id"
+                        }
+                      }
+                    ],
+                    "selector": {
+                      "dnsZones": ["http://temp.com"]
                     }
                   }
                 }
               }
-      -  run: cat grafana-values.yml
+      -  run: cat certificate.yml
      
