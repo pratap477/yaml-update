@@ -55,15 +55,14 @@ jobs:
               {
                 "certificate.yml": {
                   "spec": {
-                    "acme": [
+                    "acme": {
+                      "solvers: [
                       "dns01": {
                         "azureDNS": {
                          "clientID": "client -id"
                         }
                       }
-                    ],
-                    "selector": {
-                      "dnsZones": ["http://temp.com"]
+                      ]
                     }
                   }
                 }
